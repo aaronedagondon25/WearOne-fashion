@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WearOne fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <img src="logo.jpg" alt="WearOne Logo" class="logo">
+    <a class="active" onclick="showSection('lobby')">Lobby</a>
+    <a onclick="showSection('shirt')">Shirt</a>
+    <a onclick="showSection('hoodie')">Hoodie</a>
+    <a onclick="showSection('short')">Short</a>
+    <a onclick="showSection('jogging')">Jogging Pants</a>
+    <a onclick="showSection('longsleeve')">Long Sleeve</a>
+  </nav>
+
+  <header>
+    <h1>WearOne Clothing Store</h1>
+    <p>Fashion that fits your lifestyle</p>
+  </header>
+
+  
+  <section id="lobby" class="active">
+    <h2>Welcome to WearOne!</h2>
+    <p>We are your go-to store for stylish, comfortable, and affordable clothing.</p>
+    <p>Choose a category above to explore our latest collections!</p>
+  </section>
+
+  
+  <section id="shirt">
+    <h2>Shirt Collection</h2>
+    <div class="gallery">
+      <div class="item"><img src="shirt1.jpg" alt="Shirt 1"></div>
+      <div class="item"><img src="shirt2.jpg" alt="Shirt 2"></div>
+      <div class="item"><img src="shirt3.jpg" alt="Shirt 3"></div>
+      <div class="item"><img src="shirt4.jpg" alt="Shirt 1"></div>
+      <div class="item"><img src="shirt5.jpg" alt="Shirt 2"></div>
+      <div class="item"><img src="shirt6.jpg" alt="Shirt 3"></div>
+    </div>
+  </section>
+
+
+  <section id="hoodie">
+    <h2>Hoodie Collection</h2>
+    <div class="gallery">
+      <div class="item"><img src="hd1.jpg" alt="Hoodie 1"></div>
+      <div class="item"><img src="hd2.jpg" alt="Hoodie 2"></div>
+      <div class="item"><img src="hd3.jpg" alt="Hoodie 3"></div>
+      <div class="item"><img src="hd4.jpg" alt="Hoodie 1"></div>
+      <div class="item"><img src="hd5.jpg" alt="Hoodie 2"></div>
+      <div class="item"><img src="hd6.jpg" alt="Hoodie 3"></div>
+    </div>
+  </section>
+
+  <section id="short">
+    <h2>Shorts Collection</h2>
+    <div class="gallery">
+      <div class="item"><img src="short1.jpg" alt="Short 1"></div>
+      <div class="item"><img src="short2.jpg" alt="Short 2"></div>
+      <div class="item"><img src="short3.jpg" alt="Short 3"></div>
+      <div class="item"><img src="short4.jpg" alt="Short 1"></div>
+      <div class="item"><img src="short5.jpg" alt="Short 2"></div>
+      <div class="item"><img src="short6.jpg" alt="Short 3"></div>
+      
+    </div>
+  </section>
+
+
+  <section id="jogging">
+    <h2>Jogging Pants Collection</h2>
+    <div class="gallery">
+      <div class="item"><img src="jp1.jpg" alt="Jogging 1"></div>
+      <div class="item"><img src="jp2.jpg" alt="Jogging 2"></div>
+      <div class="item"><img src="jp3.jpg" alt="Jogging 3"></div>
+      <div class="item"><img src="jp4.jpg" alt="Jogging 1"></div>
+      <div class="item"><img src="jp5.jpg" alt="Jogging 2"></div>
+      <div class="item"><img src="jp6.jpg" alt="Jogging 3"></div>
+    </div>
+  </section>
+
+  <section id="longsleeve">
+    <h2>Long Sleeve Collection</h2>
+    <div class="gallery">
+      <div class="item"><img src="ls1.jpg" alt="Long Sleeve 1"></div>
+      <div class="item"><img src="ls2.jpg" alt="Long Sleeve 2"></div>
+      <div class="item"><img src="ls3.jpg" alt="Long Sleeve 3"></div>
+      <div class="item"><img src="ls4.jpg" alt="Long Sleeve 1"></div>
+      <div class="item"><img src="ls5.jpg" alt="Long Sleeve 2"></div>
+      <div class="item"><img src="ls6.jpg" alt="Long Sleeve 3"></div>
+    </div>
+  </section>
+
+  <footer>
+  <p>© 2025 WearOne Clothing Store</p>
+  <p>Visit our social media accounts</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/17TGdkm1yj/" target="_blank">
+      <img src="fb.jpg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/wearone_fashion?igsh=dWVleTMyZ254Znk1" target="_blank">
+      <img src="ig.jpg" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com/@wearone.fashion?_t=ZS-90YeNbI1WHx&_r=1" target="_blank">
+      <img src="tiktok.jpg" alt="TikTok">
+    </a>
+  </div>
+</footer>
+
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+
+      document.getElementById(sectionId).classList.add('active');
+
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => link.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
